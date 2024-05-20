@@ -2,13 +2,26 @@
 
 import React, { useState, useEffect } from 'react';
 
+interface User {
+  id: number;
+  nome_completo: string;
+  cargo: string;
+  email: string;
+  contato: string;
+  empresa: string;
+  pais: string;
+}
+
 const UsersPage = () => {
-  const [users, setUsers] = useState([]); // Estado para armazenar a lista de usuários
+  const [users, setUsers] = useState<User[]>([]); // Estado para armazenar a lista de usuários
 
   useEffect(() => {
     const fetchUsers = async () => {
       try {
         const res = await fetch('http://127.0.0.1:8000/listar_usuarios'); // Requisição para a API para buscar usuários
+        if (!res.ok) {
+          throw new Error('Erro ao buscar usuários');
+        }
         const data = await res.json(); // Converte a resposta para JSON
         setUsers(data); // Atualiza o estado com os dados dos usuários obtidos
       } catch (error) {
