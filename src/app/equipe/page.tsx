@@ -13,12 +13,23 @@ export default function SobrePage() {
                         <p className="text-center py-8 text-gray-900"> {/* Parágrafo centralizado com padding top e cor de texto cinza */}
                             Link do repositório GitHub: {/* Texto de link para o repositório no GitHub */}
                             <a 
-                                href="https://github.com/Akiraaa07/Sprint-3-FrontEnd"
+                                href="https://github.com/Akiraaa07/Sprint4"
                                 target="_blank"  
                                 rel="noopener noreferrer"  
                                 className="text-blue-500 hover:underline"  
                             >
                                 https://github.com/Akiraaa07/Sprint4 {/* URL do repositório */}
+                            </a>
+                        </p>
+                        <p className="text-center py-8 text-gray-900"> {/* Parágrafo centralizado com padding top e cor de texto cinza */}
+                            Link do repositório no Vercel: {/* Texto de link para o repositório no GitHub */}
+                            <a 
+                                href="https://sprint4-sigma.vercel.app/"
+                                target="_blank"  
+                                rel="noopener noreferrer"  
+                                className="text-blue-500 hover:underline"  
+                            >
+                                https://sprint4-sigma.vercel.app/ {/* URL do repositório */}
                             </a>
                         </p>
                     </aside>
