@@ -18,7 +18,7 @@ export default function SobrePage() {
                                 rel="noopener noreferrer"  
                                 className="text-blue-500 hover:underline"  
                             >
-                                https://github.com/Akiraaa07/Sprint-3-FrontEnd {/* URL do repositório */}
+                                https://github.com/Akiraaa07/Sprint4 {/* URL do repositório */}
                             </a>
                         </p>
                     </aside>
