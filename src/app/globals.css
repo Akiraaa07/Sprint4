@@ -121,3 +121,16 @@ section.services {
         max-width: 32%;
     }
 }
+.magnify {
+    position: absolute;
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 500px 500px; /* Ajuste conforme necessário */
+    display: none;
+    pointer-events: none;
+    z-index: 1000;
+}
+
